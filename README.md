@@ -11,6 +11,7 @@ This script automates the process of analyzing datasets, generating analysis pla
 - **Code Generation**: Generates Python code for the analysis based on the plan.
 - **Error Handling**: Catches and logs errors during execution, automatically attempting fixes.
 - **Report Generation**: Creates a comprehensive README.md file that includes the analysis plan, generated code, results, and plots.
+- **Log File**: Creates a log.txt that stores the complete process of the analysis.
 
 ## Requirements
 
@@ -25,3 +26,10 @@ This script automates the process of analyzing datasets, generating analysis pla
 1. Install dependencies:
    ```bash
    pip install requests pandas chardet
+2. Set up the AIPROXY_TOKEN environment variable:
+   ```bash
+   export AIPROXY_TOKEN='your-openai-api-token'
+3. Run the script with a CSV file:
+   ```bash
+   python autolysis.py path_to_your_file.csv
+
